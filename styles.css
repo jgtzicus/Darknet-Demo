@@ -43,7 +43,8 @@ font-style: normal;
 .navbar {
   display: flex;
   justify-content: space-around;
-  padding: 1rem 2rem;    
+  align-items: center;
+  padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 99;
@@ -231,6 +232,12 @@ font-style: normal;
 }
 .signup input {
   padding: 0.75rem;
+  border: none;
+  border-radius: 20px;
+}
+.signup select {
+  color: #757575;
+  padding: 0.70rem;
   border: none;
   border-radius: 20px;
 }
