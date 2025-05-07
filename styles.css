@@ -44,11 +44,10 @@ font-style: normal;
 /* NAVBAR */
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
+  position: fixed;
   z-index: 99;
 }
 .navbar a {
@@ -97,7 +96,7 @@ font-style: normal;
 }
 .hero-car.scrolled-away {
   /* fährt beim Scrollen nach rechts raus */
-  transform: translateX(150%);
+  transform: translateX(200%);
 }
 
 .cta{
