@@ -178,6 +178,7 @@ font-style: normal;
   color: var(--dark);
   text-align: center;
   margin-bottom: 100px;
+  font-size: 2rem;
 }
 
 .upcoming h2 {
@@ -240,6 +241,7 @@ font-style: normal;
 .signup {
   padding: 2rem;
   text-align: center;
+  font-size: 1.5rem;
 }
 .signup ol {
   margin-bottom: 1.5rem;
