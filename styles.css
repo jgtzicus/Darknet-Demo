@@ -13,10 +13,12 @@
 /* BODY & TYPOGRAFIE */
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #9A0201, #F70003, #9D0301);
+  background: linear-gradient(to right, #860101, #ff2629, #860101);
   color: var(--white);
   line-height: 1.5;
   font-family: 'inter', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .rubik-glitch-regular {
@@ -226,13 +228,15 @@ font-style: normal;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  max-width: 400px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .signup input {
   padding: 0.75rem;
   border: none;
   border-radius: 20px;
+  font-size: 1.25rem;
+  padding-left: 20px;
 }
 
 
@@ -243,12 +247,39 @@ height: 100px;
 .btn-fill {
 background-color: #000;
 color: var(--white);
-width: 90px;
-height: 30px;
+width: 180px;
+height: 60px;
 border-radius: 30px;
 justify-self: end;
+font-size: 1.25rem;
+
 }
 
 .car-info {
-min-height:  100px;
+  width: 100%;
+  padding: 0.75rem;    
+  padding-left: 20px;
+  border: none;
+  border-radius: 20px;
+  resize: vertical;   
+  font-family: inherit;
+  font-size: 1.25rem;
+  line-height: 45px;
+
+}
+
+.signup-area{
+  display: flex;
+}
+
+.smoke{
+  width: 40vw;
+  height: auto;
+  left: -200px;
+  position: relative;
+}
+
+form {
+  width: 50vw;
+  
 }
