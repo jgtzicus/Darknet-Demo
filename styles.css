@@ -45,7 +45,7 @@ font-style: normal;
 .norules{
   font-size: 7rem;
   letter-spacing: 2px;
-  left: 400px;
+  left: 20%;
   top: 105px;
   position: absolute;
 
@@ -54,7 +54,7 @@ font-style: normal;
 .justspeed{
   font-size: 6rem;
   letter-spacing: 2px;
-  left: 1000px;
+  left: 50%;
   top: 190px;
   position: absolute;
 
@@ -292,7 +292,7 @@ font-size: 1.25rem;
 .smoke{
   width: 40vw;
   height: auto;
-  left: -200px;
+  left: -100px;
   position: relative;
 }
 
