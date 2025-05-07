@@ -1,0 +1,241 @@
+/* Grundlegendes Reset & Variablen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --red: #e30914;
+    --dark: #111;
+    --white: #fff;
+  }
+  
+  /* BODY & TYPOGRAFIE */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #9A0201, #F70003, #9D0301);
+    color: var(--white);
+    line-height: 1.5;
+    font-family: 'inter', sans-serif;
+  }
+
+  .rubik-glitch-regular {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .gruppo-regular {
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem;    
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+  .navbar a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: bold;
+  }
+  .signup-link {
+    border: 1px solid var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+  }
+  
+  /* HERO */
+  .hero {
+    text-align: center;
+    position: relative;
+    padding: 2rem 0;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .hero-car {
+    width: 80%;
+    max-width: 600px;
+  }
+  .hero-car {
+    position: relative;
+    /* Start links außerhalb */
+    left: -150%;
+    /* sorgt für sanftes Rausfahren beim Scrollen */
+    transition: transform 0.8s ease-out;
+    animation: slideIn 1s ease-out forwards;
+    /* Optional: sorgt dafür, dass beim Scrollen wieder verschwindet */
+  }
+  @keyframes slideIn {
+    to {
+      left: 0;
+    }
+  }
+  .hero-car.scrolled-away {
+    /* fährt beim Scrollen nach rechts raus */
+    transform: translateX(150%);
+  }
+  
+  .cta{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .btn-outline {
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+  }
+  .btn-fill {
+    background: var(--white);
+    color: var(--dark);
+    border: none;
+  }
+  .checkerboard {
+    height: 40px;
+    background: 
+      repeating-conic-gradient(
+        #000 0% 25%,
+        #fff 0% 50%
+      ) 
+      50%/ 40px 40px;
+  }
+  
+  /* INFO SECTION */
+  .info-section {
+    display: flex;
+    justify-content: space-around;
+    background: none;
+    color: var(--white);
+    padding: 2rem;
+    margin-top: 100px;
+  }
+  .info-block h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--red);
+    display: inline-block;
+  }
+  .info-block ul {
+    list-style: disc inside;
+  }
+  
+  /* UPCOMING CAROUSEL */
+  .upcoming {
+    position: relative;           /* Damit left/top wirksam werden */
+    width: 150vw;                 /* Breiter als Viewport, wie gewünscht */
+    left: 50%;                    /* 50% von der linken Kante des Viewports */
+    transform: translateX(-50%)   /* Zieht die Box um die halbe eigene Breite zurück */
+               rotate(5deg);      /* Deine Schrägstellung beibehält */
+    transform-origin: center top; /* Drehpunkt in die Mitte oben setzen */
+    padding: 2rem;
+    background: var(--white);
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .upcoming h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .white-line-outher{
+    position: relative;           /* Damit left/top wirksam werden */
+    width: 150vw;                 /* Breiter als Viewport, wie gewünscht */
+    left: 50%;                    /* 50% von der linken Kante des Viewports */
+    transform: translateX(-50%)   /* Zieht die Box um die halbe eigene Breite zurück */
+               rotate(5deg);      /* Deine Schrägstellung beibehält */
+    transform-origin: center top;
+    background: none;
+  }
+
+
+  .white-line{
+    height: 10px;
+    background-color: var(--white);
+    margin-bottom: 10px;
+  }
+
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    min-width: 100%;
+    padding: 1rem;
+  }
+  .slide img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .dots {
+    margin-top: 1rem;
+  }
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    display: inline-block;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .dot.active {
+    background: var(--red);
+  }
+  
+  /* SIGNUP FORM */
+  .signup {
+    padding: 2rem;
+    text-align: center;
+  }
+  .signup ol {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    display: inline-block;
+  }
+  .signup form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .signup input {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 20px;
+  }
+  
+
+.space{
+  height: 100px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>No Rules – Just Speed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Glitch&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER mit Navbar -->
+  <header>
+    <nav class="navbar gruppo-regular">
+      <a href="#home">Home</a>
+      <a href="#info">Info</a>
+      <a href="#upcoming">Upcoming</a>
+      <a href="#sign-up" class="signup-link">Sign Up</a>
+    </nav>
+    <div id="home" class="hero">
+      <h1 class="gruppo-regular">No Rules</h1>
+      <h2 class="rubik-glitch-regular">Just Speed.</h2>
+      <img src="GeilesAuto.png" alt="Sportwagen" class="hero-car">
+      <div class="cta">
+        <p class="gruppo-regular">Ready</p>
+        <p class="gruppo-regular">Set</p>
+        <p class="gruppo-regular">Go</p>
+      </div>
+    </div>
+    <div class="checkerboard"></div>
+    <div class="checkerboard"></div>
+  </header>
+
+  <!-- FORMAT & RULES Section -->
+  <section id="info" class="info-section">
+    <div class="info-block">
+      <h3 class="gruppo-regular">FORMAT</h3>
+      <ul>
+        <li>Heads-up, elimination-style races</li>
+        <li>Bracket announced on race day</li>
+        <li>No re-runs unless ruled by officials</li>
+        <li>Races are run on closed, private roads or sanctioned locations</li>
+      </ul>
+    </div>
+    <div class="info-block">
+      <h3 class="gruppo-regular">RULES</h3>
+      <ul>
+        <li>No reckless behavior outside the track area</li>
+        <li>Helmets and safety gear are mandatory</li>
+        <li>Breaking rules = instant disqualification</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="space"></div>
+
+  <!-- Upcoming Events mit Karussell -->
+  <section class="white-line-outher">
+    <div class="white-line"></div>
+    <div class="white-line"></div>
+  </section>
+
+  <section id="upcoming" class="upcoming">
+    <h2 class="rubik-glitch-regular" data-text="Upcoming Events">Upcoming Events</h2>
+    <div class="carousel">
+      <div class="slides">
+        <div class="slide">
+          <img src="Event1.png" alt="Event 1">
+          <h4>Rush</h4>
+          <p>The ultimate test...</p>
+        </div>
+        <div class="slide">
+          <img src="Event2.png" alt="Event 2">
+          <h4>Turbo Trials</h4>
+          <p>How good is your...</p>
+        </div>
+        <div class="slide">
+          <img src="Event3.png" alt="Event 3">
+          <h4>Shadow Run</h4>
+          <p>When the sun...</p>
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sign-Up Form -->
+  <section id="sign-up" class="signup">
+    <h2>How to Sign Up?</h2>
+    <ol>
+      <li>Fill out the registration form</li>
+      <li>Pay the $100 entry fee (non-refundable)</li>
+      <li>Show up with your car, your gear, and your game face</li>
+    </ol>
+    <form>
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="car" placeholder="Car Info (Make, Model, Mods)" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="race" placeholder="Race" required>
+      <button type="submit" class="btn-fill">Sign up</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
