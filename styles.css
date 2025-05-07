@@ -42,6 +42,24 @@ font-style: normal;
 }
 
 /* NAVBAR */
+.norules{
+  font-size: 7rem;
+  letter-spacing: 2px;
+  left: 400px;
+  top: 105px;
+  position: absolute;
+
+}
+
+.justspeed{
+  font-size: 6rem;
+  letter-spacing: 2px;
+  left: 1000px;
+  top: 190px;
+  position: absolute;
+
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -68,17 +86,9 @@ font-style: normal;
   position: relative;
   padding: 2rem 0;
 }
-.hero h1 {
-  font-size: 3rem;
-  letter-spacing: 2px;
-}
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
 .hero-car {
-  width: 80%;
-  max-width: 600px;
+  height: 40vw;
+  width: auto;
 }
 .hero-car {
   position: relative;
