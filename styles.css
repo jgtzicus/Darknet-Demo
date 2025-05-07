@@ -314,3 +314,11 @@ form {
   width: 50vw;
   
 }
+
+.disclaimer {
+  background-color: #000;     /* Schwarzer Hintergrund */
+  color: #fff;                /* Weißer Text */
+  text-align: center;         /* Zentrierter Text */
+  padding: 10px 20px;         /* Etwas Innenabstand */
+  font-size: 0.9rem;          /* Etwas kleinere Schriftgröße */
+}
